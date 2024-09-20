@@ -1,18 +1,7 @@
 defmodule Olxhub do
-  @moduledoc """
-  Documentation for `Olxhub`.
-  """
+  alias OlxHub.{User, Listing, Store, Rating}
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Olxhub.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def start() do
+    Store.start_link()
   end
 end
